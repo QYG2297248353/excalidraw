@@ -10,6 +10,8 @@ RUN yarn --network-timeout 600000
 
 ARG NODE_ENV=production
 
+EXPOSE 80
+
 RUN yarn build:app:docker
 
 FROM nginx:1.27-alpine
